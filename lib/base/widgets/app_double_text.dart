@@ -10,7 +10,7 @@ class AppDoubleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 6),
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
       height: 40,
       width: double.infinity,
       // color: Colors.red,
@@ -19,9 +19,10 @@ class AppDoubleText extends StatelessWidget {
         children: [
           Text(
             bigText,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
           ),
-          Text(smallText)
+          Text(smallText,
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500))
         ],
       ),
     );
