@@ -1,5 +1,6 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:ticketbookingapp/base/widgets/app_double_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                     //   size: 33,
                     // ),
 
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         // borderRadius: BorderRadius.circular(5),
                         // color: Colors.green,
                         image: DecorationImage(
@@ -54,9 +55,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 21),
+              const SizedBox(height: 21),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.lightGreen.shade300),
@@ -72,6 +74,13 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 ),
+              ),
+              const SizedBox(
+                height: 18,
+              ),
+              const AppDoubleText(
+                bigText: "Upcoming flights",
+                smallText: "View all",
               )
             ],
           ),
